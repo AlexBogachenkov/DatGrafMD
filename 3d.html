@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MD 3d</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        #matrix td {
+            width: 10px;
+            height: 10px;
+            line-height: 10px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        #colNumTable td {
+            width: 11px;
+            text-align: center;
+            font-size: 10px;
+        }
+        #rowNumTable td {
+            width: 11px;
+            font-size: 9px;
+        }
+        #colNumTable {
+            margin-left: 14px;
+        }
+        .block-container {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+<table id="colNumTable"></table>
+<div class="block-container">
+    <table id="rowNumTable"></table>
+    <table id="matrix"></table>
+</div>
+
+</body>
+<script type="module" src="3dScript.js"></script>
+</html>
