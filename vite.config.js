@@ -8,6 +8,7 @@ export default {
                 page3d: '3d.html',
                 page2a: '2a.html',
                 page72a: '72a.html',
+                img2a: '2a_image.png',
             }
         }
     }
