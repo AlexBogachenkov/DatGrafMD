@@ -11,6 +11,9 @@ img.onload = () => {
     ctx.drawImage(img, 0, 0);
 };
 
+const button = document.getElementById('button');
+button.addEventListener('click', execute);
+
 function execute() {
     const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
     const data = imageData.data;

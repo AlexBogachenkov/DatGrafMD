@@ -11,6 +11,17 @@ img.onload = () => {
     ctx.drawImage(img, 0, 0);
 };
 
+const buttonBlur3 = document.getElementById("buttonBlur3");
+const buttonBlur7 = document.getElementById("buttonBlur7");
+const buttonSharpen3 = document.getElementById("buttonSharpen3");
+const buttonSharpen5 = document.getElementById("buttonSharpen5");
+
+buttonBlur3.addEventListener("click", () => applyFilter("blur3"));
+buttonBlur7.addEventListener("click", () => applyFilter("blur7"));
+buttonSharpen3.addEventListener("click", () => applyFilter("sharpen3"));
+buttonSharpen5.addEventListener("click", () => applyFilter("sharpen5"));
+
+
 function applyFilter(type) {
     canvas = document.getElementById("canvas");
     ctx = canvas.getContext("2d");
